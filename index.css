@@ -30,6 +30,15 @@
     max-width: 80%;
     -ms-text-overflow: initial;
 }
+#avatar{
+    width: 40%;
+    margin-left: 30% ;
+    margin-right: 30%;
+}
+#username{
+    text-align: center;
+    font-size: 15px;
+}
 .menu a{
     margin-top: 15% !important;
     margin: 10%;
@@ -60,52 +69,18 @@
     background-color:grey;
     color: white;
 }
-.bottom-menu{
-    width: 85%;
-    margin-top: 40% !important;
-    margin: 8%;
-    border-radius: 20px;
-    background-color: rgba(128, 128, 128, 0.363);
-}
-.bottom-menu a{
-    margin: 7%;
-}
-.bottom-menu a button{
-    width: 65%;
-    margin: 10%;
-    outline: none;
-    padding: 8px 0px;
-    border-radius: 12px;
-    background-color:rgba(128, 128, 128, 0.144);
-    border-style: none;
-}
-.bottom-menu a button:hover{
-    background-color:grey;
-    color: white;
-}
+
 .header{
-    max-height: 20vh auto;
+    flex-direction: column;
+    height: 20vh auto;
     width: 100% ;   
     margin-top: 0px;
     padding: 20px 0px 20px 30px; 
 }
-.sreach-bar{
-    width: 60%;
-    height: 54px;
-    float: left;
-    border-radius: 15px;
-    color: rgba(201, 185, 185, 0.212);
-}
-#menu{
-    width: 10%;
-    float: left;
-    
-}
-#menu img{
-    margin: 10%;
-    height: 35px;
-    position: relative;
+#menu-icon {
     display: none;
+    float: left;
+    width: 22px;
 }
 #sreach-bar{
     margin-left: 6%;
@@ -117,27 +92,21 @@
     outline-style: none; max-height: 5vh; width: 30vw;
      max-width: 33vw; font-size: 20px;
 }
-.header #bell{
-    float: right;
+.sreach-bar a{
+    margin-left: 20%;
+}
+.sreach-bar a button{
+    width: 10%;
     height: 30px;
-    margin-top: 1%;
+    outline: none;
+    padding: 3px 0px;
+    border-radius: 12px;
+    background-color:rgba(128, 128, 128, 0.144);
+    border-style: none;
 }
-.proflie{
-    position: relative;
-    width: 40%;
-    height: 54px;
-    float:right;
-    color: black;
-}
-.proflie h3{
-    float: left;
-    max-width: 70px;
-    margin: 2% 1% 1% 15%;
-}
-.proflie img{
-    float: right;
-    height: 60px;
-    margin-right: 30%;
+.sreach-bar a button:hover{
+    background-color:grey;
+    color: white;
 }
 .right-containes{
     width: 83%;
@@ -146,7 +115,6 @@
     position: relative;
     flex-direction: row;
 }
-
 .body-img{
     margin-top: 4%;
     width: 100%;
@@ -241,19 +209,19 @@
     width: 100%;  
     background-color: black;
     color: blanchedalmond;
-    height:10vh;
+    height:8vh;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
 .footer .col1{
     padding-left: 4%;
     padding-top: 2%;
-    width: 60%;
+    width: 70%;
     letter-spacing: 1px;
     float: left;
 }
 .footer .col2{
-    width: 40%;
+    width: 30%;
     float: right;
     padding-top: 1.4%;
 }
@@ -262,7 +230,8 @@
 }
 .footer .col2 li{
     float: left;
-    width: 10%;
+    margin-top: -5%;
+    width: 20%;
     margin-left: 5%;
     list-style: none;
 }
@@ -271,57 +240,82 @@
     width: 100%;
     padding-left: 0px !important;
 }
+.bottom-menu{
+    width: 85%;
+    margin-top: 40% !important;
+    margin: 8%;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.363);
+}
+#menuList{
+    display: none;
+    margin-left:10vw;
+}
+#menuList .menu a{
+    margin: 7%;
+}
+#menuList .menu a button{
+    width: 65%;
+    margin: 10%;
+    outline: none;
+    padding: 8px 0px;
+    border-radius: 12px;
+    background-color:rgba(128, 128, 128, 0.144);
+    border-style: none;
+}
+#menuList .menu a button:hover{
+    background-color:grey;
+    color: white;
+}
 @media screen and (max-width:500px){
-    #menu{
+    #menu-icon{
+        margin-top: 2%;
         display: block;
     }
-    #menu img {
-        display: contents;
+    #menuList h2{
+        text-align: center;
+        margin-bottom: 6px;
+
     }
-    .right-containes{
-        width: 100%;
+    #menuList{
+        display: block;
+        overflow: hidden;
+        position: fixed;
+        background-color: blue;
+        transition:  0.3s;
+        border-radius: 15px;
+        z-index: 1;
     }
     .left-container{
         display: none;
     }
+    .container .right-containes{
+        width: 100vw;
+    }
     .header{
+        flex-direction:initial;
+        width: 100%;
         margin: 0px;
+    }
+    .header #log-out button{
+        width: 60px;
+        margin: 0px 5px ;
+
     }
     .sreach-bar{
         margin-left: 0%;
-        height: 30px;
+        width: 100%;
         font-size: 15px;
     }
     #sreach-bar{
         border-radius: 15px;
         height: 20px;
         border-color: rgba(128, 128, 128, 0.425);
-        outline-style: none; max-height: 5vh; width: 40vw;
+        outline-style: none; 
         font-size: 15px;
     }
-    .header #bell{
-        float: right;
-        height: 20px;
-        margin-top: 1%;
-    }
-    .proflie{
-        position: relative;
-        width: 40%;
-        height: 25px;
-        float:right;
-        color: black;
-    }
-    .proflie h3{
-        float: left;
-        font-size: 15px;
-        max-width: 30px;
-        margin: 2% 1% 1% 15%;
-    }
-    .proflie img{
-        float: right;
-        height: 40px;
-        margin-top: -10px;
-        margin-right: 10px;
+    .body-img{
+        margin-top:0px;
     }
     .body-img h2{
         font-size: 20px;
@@ -392,23 +386,26 @@
         width: 100%;  
         background-color: black;
         color: blanchedalmond;
-        height:10vh;
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
+        height:5vh;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
     .footer .col1 p{
         font-size: 10px;
     }
     .footer .col1{
         padding-left: 4%;
-        padding-top: 2%;
+        padding-top: 4%;
         width: 60%;
         font-size: 20px;
         letter-spacing: 1px;
         float: left;
     }
     .footer .col2{
-        padding-top:7% ;
+        padding-top:5% ;
+    }
+    .footer .col2 li img{
+        width: 100%;
     }
 
 }
@@ -436,29 +433,10 @@
         outline-style: none; max-height: 5vh; width: 35vw;
         font-size: 15px;
     }
-    .header #bell{
-        float: right;
-        height: 25px;
-        margin-top: 1%;
-    }
-    .proflie{
-        position: relative;
-        width: 40%;
-        height: 25px;
-        float:right;
-        color: black;
-    }
-    .proflie h3{
-        float: left;
-        font-size: 20px;
-        max-width: 30px;
-        margin: 2% 1% 1% 15%;
-    }
-    .proflie img{
-        float: right;
-        height: 55px;
-        margin-top: -10px;
-        margin-right:20%;
+    .header #log-out button{
+        width: 60px;
+        margin: 0px 5px ;
+
     }
     .body-img h2{
         font-size: 20px;
@@ -500,12 +478,16 @@
         margin: 2% 1% 1% 2%;
     }
     .footer{
-        height: 12vh;
+        height: 8vh;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
     }
     .footer .col1 p{
         font-size: 12px;
+        margin-top: 1%;
     }
     .footer .col2 li{
         width: 20%;
+        margin-top: 1%;
     }
 }
