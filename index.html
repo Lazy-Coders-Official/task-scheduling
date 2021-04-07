@@ -32,7 +32,7 @@
                     <a id="log-out" href="./log-out.html"><button>log out</button></a>
                 </div>
             </div>
-            <div id="menuList">
+            <div id="menuList" >
                 <h2>logo</h2>
                 <img id="avatar" src="./Avatar.png" alt="">
                 <p id="username">Avator</p>
@@ -44,7 +44,7 @@
                     <a href="./contact.html" ><button id="conntact">contact</button></a>
                 </div>
             </div>
-            <div class="body-img">
+            <div class="body-img" onclick="retogglemenu(menuList)">
                 <h2 >Home</h2>
                 <div class="images">
                     <ul>
@@ -85,6 +85,11 @@
                 menuList.style.maxWidth ="50vw"
             }
             else{
+                menuList.style.maxWidth ="0vw"
+            }
+        }
+        function retogglemenu(){
+            if (menuList.style.maxWidth ="50vw"){
                 menuList.style.maxWidth ="0vw"
             }
         }
