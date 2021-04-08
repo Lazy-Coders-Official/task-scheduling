@@ -1,0 +1,212 @@
+#home{
+    color: white;
+    background-color: grey;
+}
+.right-containes{
+    width: 83%;
+    float: right;
+    height: 100% auto;
+    position: relative;
+    flex-direction: row;
+}
+.body-img{
+    margin-top: 4%;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    height: auto;
+}
+.body-img h2{
+  padding-left: 5%;
+}
+.body-img ul li{
+    margin-top: 40px;
+    padding-left: 3%;
+    list-style: none;
+}
+.body-img ul li img{
+    border-radius: 30px;
+}
+#img1{
+    float: left;
+    width: 33%;
+    height: 48vh;
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+#img2{
+    float: right;
+    height: 90vh;
+    width: 56%;
+    margin-right: 5%;
+}
+#img3{
+    float: left;
+    width: 33%;
+    height: 39vh;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+#img4{
+    margin-top: 3%;
+    float: right;
+    width: 47%;
+    height: 50vh;
+    margin-right: 4%;
+
+}
+#img5{
+    float: left;
+    width: 45%;
+    height: 51vh;
+    margin: 2% 1% 1% 2%;
+}
+
+.body-content{
+    margin: 5%;
+    margin-top: 2% !important;
+    width: 90%;
+    float: left;
+}
+.body-content h2{
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.body-content p span{
+    margin-left: 8%;
+}
+.body-content ul li{
+    list-style: none;
+}
+.body-content ul li img{
+    width: 30%;
+    margin: 1%;
+    float: left;
+}
+.reading{
+    width: 28%;
+    background-color: linear-gradient(to bottom,blue);
+    border: 3px solid greenyellow;
+    float: left;
+    margin: 2%;
+    text-align: center;
+    font-size: medium;
+    border-radius: 7%;
+    color: rgba(0, 128, 0, 0.932);
+}
+.reading img{
+    width: 90%;
+    border-radius: 4%;
+}
+@media screen and (max-width:500px){
+    .body-img{
+        margin-top:0px;
+    }
+    .body-img h2{
+        font-size: 20px;
+    }
+    .body-img ul li img{
+        border-radius: 15px;
+    }
+    #img1{
+        float: left;
+        width: 40%;
+        height: 28vh;
+        margin-left: 2%;
+        margin-bottom: 1%;
+    }
+    #img2{
+        float: right;
+        width: 50%;
+        height: 50vh;
+        margin-right: 5%;
+    }
+    #img3{
+        float: left;
+        width: 40%;
+        height: 20vh;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+    #img4{
+        margin-top: 3%;
+        float: right;
+        width: 45%;
+        height: 39.5vh;
+        margin-right: 5%;
+    
+    }
+    #img5{
+        float: left;
+        width: 45%;
+        height: 40vh;
+        margin: 2% 1% 1% 2%;
+    }
+    .body-content{
+        margin: 5%;
+        margin-top: 2% !important;
+        width: 90%;
+        float: left;
+    }
+    .body-content h2{
+        margin-top: 2%;
+        margin-bottom: 1%;
+        font-size: 20px;
+    }
+    .body-content p span{
+        margin-left: 8%;
+        font-size: 15px;
+        position: relative;
+    }
+    .body-content ul li{
+        list-style: none;
+    }
+    .body-content ul li img{
+        width: 30%;
+        margin: 1%;
+        float: left;
+    }
+}
+@media screen and (max-width:800px) {
+    
+    .body-img h2{
+        font-size: 20px;
+    }
+    .body-img ul li img{
+        border-radius: 15px;
+    }
+    #img1{
+        float: left;
+        width: 40%;
+        height: 30vh;
+        margin-left: 2%;
+        margin-bottom: 1%;
+    }
+    #img2{
+        float: right;
+        width: 50%;
+        height: 55vh;
+        margin-right: 5%;
+    }
+    #img3{
+        float: left;
+        width: 40%;
+        height: 23vh;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+    #img4{
+        margin-top: 3%;
+        float: right;
+        width: 45%;
+        height: 39.5vh;
+        margin-right: 5%;
+    }
+    #img5{
+        float: left;
+        width: 45%;
+        height: 40vh;
+        margin: 2% 1% 1% 2%;
+    }
+
+}
