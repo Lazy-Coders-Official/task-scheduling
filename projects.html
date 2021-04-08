@@ -45,7 +45,7 @@
                     <a href="./contact.html" ><button id="conntact">contact</button></a>
                 </div>
             </div>
-            <div class="body-content">
+            <div class="body-content" onclick="retogglemenu()">
                 <h2>Projects</h2>
                 <p><span>Select</span> the projects to start work...</p>
                 <div class="projects">
@@ -120,7 +120,7 @@
         function togglemenu(){
             if (menuList.style.maxHeight =="0vh"){
                 menuList.style.maxHeight ="60vh"
-                menuList.style.maxWidth ="120px"
+                menuList.style.maxWidth ="180px"
             }
             else{
                 menuList.style.maxHeight ="0vh"
@@ -128,7 +128,7 @@
             }
         }
         function retogglemenu(){
-            if (menuList.style.maxHeight ="60vh"){
+            if (menuList.style.maxHeight == "60vh"){
                 menuList.style.maxHeight ="0vh"
                 menuList.style.maxWidth ="0vw"
             }
